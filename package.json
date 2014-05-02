@@ -1,0 +1,11 @@
+{
+  "name"         : "hereiam",
+  "version"      : "0.0.1",
+  "description"  : "Simple  application.",
+  "private"      : true,
+  "author"       : "hanseilers",
+  "dependencies" : {
+    "express.io"    : "*",
+    "redis"   : "*"
+  }
+}
