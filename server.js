@@ -20,6 +20,6 @@ app.io.route('location', function(req) {
 app.get('/', function(req, res) {
 	res.sendfile(__dirname + '/public/client.html');
 });
-var port = 8088;
+var port = process.env.PORT;
 app.listen(port);
 console.log("App listening on port " + port);
