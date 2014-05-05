@@ -1,5 +1,64 @@
+<style>
+    #text {
+        margin-top: 100px;
+        text-align: center;
+    }
+    #compass {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        margin: 20px auto 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 250px;
+    }
+    .north, .south {
+        position: absolute;
+        left: 240px;
+        width: 20px;
+        height: 250px;
+    }
+    .north {
+        top: 0;
+        background: red;
+        text-align: center;
+        font-size: 11px;
+    }
+    .south {
+        top: 250px;
+        background: black;
+    }
+    #meta {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://ai.github.io/compass.js/compass.js"></script>
+
+<div>
+    <div id="distance"></div>
+    <div id="theirHeading"></div>
+</div>
+<div id="text">initializing</div>
+<div id="compass">
+    <div class="north">N</div>
+    <div class="south"></div>
+</div>
+<div id="meta"></div>
+
+ <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+
+    </script>
+    
+<div id="map_canvas"></div>
+
 <script src="js/default.js"></script>
-<img src='http://www.tredion.nl/images/pijl_1.jpg' id='arrow' width='30'/>
